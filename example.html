@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пример использования слайдера</title>
+  
+  <!-- 1. Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="slider-component.css">
+  
+  <!-- Ваши стили -->
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Мой проект</h1>
+    <p>Какой-то контент до слайдера...</p>
+
+    <!-- 2. Вставляем HTML слайдера -->
+    <div class="slider" data-slides-to-scroll="3" tabindex="0">
+      <!-- Стрелки -->
+      <button class="slider-btn-prev" aria-label="Предыдущий"><span>&#8249;</span></button>
+      <button class="slider-btn-next" aria-label="Следующий"><span>&#8250;</span></button>
+
+      <!-- Окно просмотра -->
+      <div class="slider-viewport">
+        <div class="slider-track">
+          
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/a.jpg" alt="A"></div>
+            <div class="slide-text"><h3>Заголовок 1</h3><p>Описание слайда 1</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/b.jpg" alt="B"></div>
+            <div class="slide-text"><h3>Заголовок 2</h3><p>Описание слайда 2</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/c.jpg" alt="C"></div>
+            <div class="slide-text"><h3>Заголовок 3</h3><p>Описание слайда 3</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/a.jpg" alt="D"></div>
+            <div class="slide-text"><h3>Заголовок 4</h3><p>Описание слайда 4</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/b.jpg" alt="E"></div>
+            <div class="slide-text"><h3>Заголовок 5</h3><p>Описание слайда 5</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/c.jpg" alt="F"></div>
+            <div class="slide-text"><h3>Заголовок 6</h3><p>Описание слайда 6</p></div>
+          </div>
+
+          <div class="slider-slide">
+            <div class="slide-image"><img src="../img/a.jpg" alt="G"></div>
+            <div class="slide-text"><h3>Заголовок 7</h3><p>Описание слайда 7</p></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p>Какой-то контент после слайдера...</p>
+  </div>
+
+  <!-- 3. Подключаем JS слайдера (перед закрывающим body) -->
+  <script src="slider-component.js"></script>
+</body>
+</html>
